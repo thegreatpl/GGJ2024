@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour
 {
     public EntityController controller;
 
-    ObjectScript CarriedObject; 
+    ObjectScript CarriedObject;
+
+    public float DropDistance = 2; 
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +65,7 @@ public class PlayerController : MonoBehaviour
         {  
             CarriedObject.gameObject.SetActive(true);
             CarriedObject.transform.parent = null;
-            CarriedObject.transform.position = transform.position.GetInDirection(controller.FacingDirction); 
+            CarriedObject.transform.position = transform.position.GetInDirection(controller.FacingDirction, DropDistance); 
             CarriedObject = null; 
         }
     }
