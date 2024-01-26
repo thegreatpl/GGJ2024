@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -17,23 +18,37 @@ public class Assets : MonoBehaviour
             var directories = Directory.GetDirectories("Assets/Prefabs");
             foreach (var d in directories)
             {
-                var files = Directory.GetFiles(d).Where(x => Path.GetExtension(x) == ".prefab").ToList();
-                foreach (var f in files)
-                {
-                    Debug.Log(f);
-                    var name = Path.GetFileNameWithoutExtension(f);
-                    prefabs.Add(new PrefabDefinition()
-                    {
-                        Name = name,
-                        Prefab = (GameObject)AssetDatabase.LoadAssetAtPath(f, typeof(GameObject)),
-                        Type = Path.GetFileName(d)
-                    });
-                }
+                prefabs.AddRange(GetPrefabsFromFolder(d));
             }
 
             var gamemanager = gameManagerobj.prefabContentsRoot.GetComponent<PrefabManager>();
             gamemanager.Prefabs = prefabs;
 
         }
+    }
+
+    static List<PrefabDefinition> GetPrefabsFromFolder(string d)
+    {
+        var prefabs = new List<PrefabDefinition>();
+        var files = Directory.GetFiles(d).Where(x => Path.GetExtension(x) == ".prefab").ToList();
+        foreach (var f in files)
+        {
+            Debug.Log(f);
+            var name = Path.GetFileNameWithoutExtension(f);
+            prefabs.Add(new PrefabDefinition()
+            {
+                Name = name,
+                Prefab = (GameObject)AssetDatabase.LoadAssetAtPath(f, typeof(GameObject)),
+                Type = Path.GetFileName(d)
+            });
+        }
+        var directories = Directory.GetDirectories(d);
+        foreach (var d2 in directories)
+        {
+            prefabs.AddRange(GetPrefabsFromFolder(d2));
+        }
+
+
+        return prefabs;
     }
 }

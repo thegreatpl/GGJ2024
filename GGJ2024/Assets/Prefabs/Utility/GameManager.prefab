@@ -48,6 +48,7 @@ MonoBehaviour:
   PrefabManager: {fileID: 0}
   Player: {fileID: 0}
   Camera: {fileID: 0}
+  World: {fileID: 0}
 --- !u!114 &1062009869607944879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,6 +65,9 @@ MonoBehaviour:
   - Name: Player
     Prefab: {fileID: 4405503970555594676, guid: 65fa90ad59858a24fbaea0fdb8802518, type: 3}
     Type: Entities
+  - Name: BaseEnemy
+    Prefab: {fileID: 2309442964941641742, guid: 607371778edba0048ac62352d46beb7a, type: 3}
+    Type: Enemies
   - Name: Camera
     Prefab: {fileID: 3928416098577502581, guid: d3a9d5165070d20449cc9610b64bf1bf, type: 3}
     Type: Utility
