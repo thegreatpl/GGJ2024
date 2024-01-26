@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 9017816840815034821}
   - component: {fileID: 7168857089342841252}
   - component: {fileID: 1108565409975295133}
+  - component: {fileID: -2844831312379701964}
+  - component: {fileID: 561820902841916702}
+  - component: {fileID: -7127471982865247019}
   m_Layer: 0
   m_Name: BaseEnemy
   m_TagString: Untagged
@@ -212,3 +215,51 @@ MonoBehaviour:
   m_labelHash: 0.009161512
   m_SpriteKey: 0
   m_SpriteHash: 866593510
+--- !u!114 &-2844831312379701964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309442964941641742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28075a043aff66488b26c24f558d168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeed: 2
+  MaxHealth: 1
+  AttackDamage: 1
+  AttackDistance: 1
+  AttackSpeed: 10
+  Sight: 5
+  CurrentHealth: 0
+  AttackCooldown: 0
+--- !u!114 &561820902841916702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309442964941641742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ef8948f0b7c5a468460b3cca1525d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FacingDirction: 0
+--- !u!114 &-7127471982865247019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309442964941641742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7627affce3eac4d93c7446f8c9bd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attributes: {fileID: 0}
+  controller: {fileID: 0}
+  PacificationComponent: {fileID: 0}

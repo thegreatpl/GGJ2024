@@ -82,7 +82,12 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
-    IEnumerator LoadLevel(string levelName)
+    public void LoadLevel(string levelName)
+    {
+        StartCoroutine(LoadLevelCo(levelName)); 
+    }
+
+    IEnumerator LoadLevelCo(string levelName)
     {
         SceneManager.LoadScene(levelName, LoadSceneMode.Single);  
         yield return null;
