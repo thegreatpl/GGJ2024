@@ -40,13 +40,13 @@ public class Attributes : MonoBehaviour
     public void DealDamage(int damage)
     {
         CurrentHealth -= damage;
-        OnDamage.Invoke();
+        OnDamage?.Invoke();
         if (CurrentHealth < 0)
             Death();
     }
 
     public void Death()
     {
-        OnDeath.Invoke();
+        OnDeath?.Invoke();
     }
 }

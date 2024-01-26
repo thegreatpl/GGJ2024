@@ -25,6 +25,8 @@ public class PacificationComponent : MonoBehaviour
         SpriteLibrary = GetComponent<SpriteLibrary>();
         CurrentMood = Mood.Normal; 
         SpriteLibrary.spriteLibraryAsset = Normal;
+
+       // GameManager.Instance.World.RegisterEnemy(this); 
     }
 
     // Update is called once per frame

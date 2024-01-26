@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
 
         PrefabManager = GetComponent<PrefabManager>();
 
@@ -46,8 +47,8 @@ public class GameManager : MonoBehaviour
     IEnumerator test()
     {
         yield return StartCoroutine(SpawnPlayer());
-        World = FindObjectOfType<WorldScript>();
-        yield return StartCoroutine(World.LoadWorld());
+       // World = FindObjectOfType<WorldScript>();
+        yield return StartCoroutine(LoadLevelCo(SceneManager.GetActiveScene().name));
 
     }
     
@@ -88,14 +89,22 @@ public class GameManager : MonoBehaviour
     }
 
     IEnumerator LoadLevelCo(string levelName)
-    {
-        SceneManager.LoadScene(levelName, LoadSceneMode.Single);  
-        yield return null;
+    {       
+        //drop any item carried first. 
         if (Player != null)
         {
             Player.GetComponent<PlayerController>().DropObject(); 
         }
-        World = FindObjectOfType<WorldScript>();
+        SceneManager.LoadScene(levelName, LoadSceneMode.Single); 
+        
+        yield return null;
+        World = FindObjectOfType<WorldScript>(); 
+
+        if (Player == null) 
+        {
+            yield return StartCoroutine(SpawnPlayer());
+        }
+        
         yield return StartCoroutine(World.LoadWorld());
     }
 }
