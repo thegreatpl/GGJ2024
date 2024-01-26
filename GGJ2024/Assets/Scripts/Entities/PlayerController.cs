@@ -12,20 +12,25 @@ public class PlayerController : MonoBehaviour
 
     ObjectScript CarriedObject;
 
-    public float DropDistance = 2; 
+    public float DropDistance = 2;
+
+    public Attributes Attributes;
 
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<EntityController>();
+        Attributes = GetComponent<Attributes>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
-            DropObject(); 
+        if (Input.GetButtonDown("DropObject"))
+            DropObject();
 
+        if (Input.GetButtonDown("UseObject"))
+            UseObject();
 
 
         var x = Input.GetAxis("Horizontal");
@@ -71,6 +76,25 @@ public class PlayerController : MonoBehaviour
             //prevent the object being brought between levels. 
             SceneManager.MoveGameObjectToScene(CarriedObject.gameObject, SceneManager.GetActiveScene());
             CarriedObject = null; 
+        }
+    }
+
+
+    public void UseObject()
+    {
+        if (CarriedObject == null)
+            return; 
+
+
+        var colliders = Physics2D.OverlapCircleAll(transform.position, Attributes.AttackDistance);
+
+        foreach(var coll in colliders)
+        {
+            var pacifscript = coll.gameObject.GetComponent<PacificationComponent>();
+            if (pacifscript != null)
+            {
+                pacifscript.ApplyObject(CarriedObject.type); 
+            }
         }
     }
 }
