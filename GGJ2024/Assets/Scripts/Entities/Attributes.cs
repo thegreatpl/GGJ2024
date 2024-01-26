@@ -11,8 +11,9 @@ public class Attributes : MonoBehaviour
 {
     public float MovementSpeed;
     public int MaxHealth;
-    public int AttackDamage; 
-
+    public int AttackDamage;
+    public float AttackDistance; 
+    public float AttackSpeed;
 
     public int CurrentHealth;
 
