@@ -7,8 +7,22 @@ public class EntityController : MonoBehaviour
 {
     Attributes attributes;
 
+    Direction _movementDirection; 
 
-    public Direction MovementDirection; 
+    public Direction MovementDirection
+    {
+        get { return _movementDirection; }
+        set 
+        {
+            if (value == Direction.None && _movementDirection != Direction.None)
+                FacingDirction = _movementDirection; 
+            else if (value != Direction.None)
+                FacingDirction = value;
+
+            _movementDirection = value; 
+        }
+    }
+    public Direction FacingDirction; 
 
     // Start is called before the first frame update
     void Start()
