@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7705394604128096379}
   - component: {fileID: -6613249693821535232}
+  - component: {fileID: 1062009869607944879}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,3 +45,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50fa4424e9eff64e9df9bd55ea062d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PrefabManager: {fileID: 0}
+  Player: {fileID: 0}
+  Camera: {fileID: 0}
+--- !u!114 &1062009869607944879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2394971880605497229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794ecca2212a17446b74374271555439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefabs:
+  - Name: Player
+    Prefab: {fileID: 4405503970555594676, guid: 65fa90ad59858a24fbaea0fdb8802518, type: 3}
+    Type: Entities
+  - Name: Camera
+    Prefab: {fileID: 3928416098577502581, guid: d3a9d5165070d20449cc9610b64bf1bf, type: 3}
+    Type: Utility
+  - Name: GameManager
+    Prefab: {fileID: 2394971880605497229}
+    Type: Utility
+  - Name: World
+    Prefab: {fileID: 4445003951275895430, guid: b21d7aa09635d6840a29083b7f9f900d, type: 3}
+    Type: Utility
