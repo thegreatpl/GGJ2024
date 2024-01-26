@@ -86,6 +86,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(levelName, LoadSceneMode.Single);  
         yield return null;
+        if (Player != null)
+        {
+            Player.GetComponent<PlayerController>().DropObject(); 
+        }
         World = FindObjectOfType<WorldScript>();
         yield return StartCoroutine(World.LoadWorld());
     }

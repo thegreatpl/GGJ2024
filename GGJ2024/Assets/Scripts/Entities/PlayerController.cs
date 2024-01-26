@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TreeEditor;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(EntityController))]
 public class PlayerController : MonoBehaviour
@@ -65,7 +67,9 @@ public class PlayerController : MonoBehaviour
         {  
             CarriedObject.gameObject.SetActive(true);
             CarriedObject.transform.parent = null;
-            CarriedObject.transform.position = transform.position.GetInDirection(controller.FacingDirction, DropDistance); 
+            CarriedObject.transform.position = transform.position.GetInDirection(controller.FacingDirction, DropDistance);
+            //prevent the object being brought between levels. 
+            SceneManager.MoveGameObjectToScene(CarriedObject.gameObject, SceneManager.GetActiveScene());
             CarriedObject = null; 
         }
     }
