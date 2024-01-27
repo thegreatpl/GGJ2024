@@ -6,6 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(EntityController))]
+[RequireComponent(typeof(SoundEffectController))]
 public class PlayerController : MonoBehaviour
 {
     public EntityController controller;
@@ -16,11 +17,19 @@ public class PlayerController : MonoBehaviour
 
     public Attributes Attributes;
 
+    public SoundEffectController SoundEffectController;
+
     // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<EntityController>();
         Attributes = GetComponent<Attributes>();
+        SoundEffectController = GetComponent<SoundEffectController>();
+
+        Attributes.OnDamage += () =>
+        {
+            SoundEffectController.PlaySound("takeDamage");
+        }; 
     }
 
     // Update is called once per frame
@@ -83,8 +92,11 @@ public class PlayerController : MonoBehaviour
     public void UseObject()
     {
         if (CarriedObject == null)
-            return; 
+            return;
+        controller.Animator.SetTrigger("IsAttacking");
+        Attributes.AttackCooldown = Attributes.AttackSpeed; //give time for the animation to run. 
 
+        SoundEffectController.PlaySound(CarriedObject.SoundEffectName); 
 
         var colliders = Physics2D.OverlapCircleAll(transform.position, Attributes.AttackDistance);
 
@@ -96,5 +108,7 @@ public class PlayerController : MonoBehaviour
                 pacifscript.ApplyObject(CarriedObject.type); 
             }
         }
+
+        
     }
 }

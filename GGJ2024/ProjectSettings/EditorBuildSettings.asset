@@ -12,30 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LVL_01.unity
     guid: 5555e573d4eb32047825276924e99015
   - enabled: 1
-    path: Assets/Scenes/LVL_01_B.unity
-    guid: f140b854695be484ead68763de39e93d
-  - enabled: 1
-    path: Assets/Scenes/LVL_02.unity
-    guid: 106fcab29e8f79c4a92fdbd347b98ac4
-  - enabled: 1
-    path: Assets/Scenes/LVL_03.unity
-    guid: f08cbf4e48fe4a441b59628c9c6f4a9c
-  - enabled: 1
-    path: Assets/Scenes/LVL_04.unity
-    guid: aa1020fa231992f43afac189713dd045
-  - enabled: 1
-    path: Assets/Scenes/LVL_05.unity
-    guid: 1f964c7f347c67d4881653fb3c3cad31
-  - enabled: 1
-    path: Assets/Scenes/LVL_06.unity
-    guid: c08c5edb1b632d14595a6cade1a9809e
-  - enabled: 1
-    path: Assets/Scenes/Old_LVL_02.unity
-    guid: 83484c38e0c26024ca18ff1e4cdb9971
-  - enabled: 1
-    path: Assets/Scenes/Old_LVL_03.unity
-    guid: 75680779d4ddd2440971a11f1f3d0975
-  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

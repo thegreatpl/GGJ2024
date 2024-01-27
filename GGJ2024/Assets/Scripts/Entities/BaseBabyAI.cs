@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(PacificationComponent))]
+
 public class BaseBabyAI : BaseAI
 {
     public PacificationComponent PacificationComponent;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,11 +56,13 @@ public class BaseBabyAI : BaseAI
 
     protected virtual void PacifiedBehaviour()
     {
+        //add in idle sounds. 
         controller.MovementDirection = Direction.None; //stop wandering off.
     }
 
     protected virtual void NormalBehaviour()
     {
+        //add in idle sounds. 
         controller.MovementDirection = Direction.None; //stop wandering off.
     }
 }
