@@ -93,6 +93,9 @@ public class PlayerController : MonoBehaviour
     {
         if (CarriedObject == null)
             return;
+        controller.Animator.SetTrigger("IsAttacking");
+        Attributes.AttackCooldown = Attributes.AttackSpeed; //give time for the animation to run. 
+            return;
 
         SoundEffectController.PlaySound(CarriedObject.SoundEffectName); 
 
@@ -106,5 +109,7 @@ public class PlayerController : MonoBehaviour
                 pacifscript.ApplyObject(CarriedObject.type); 
             }
         }
+
+        
     }
 }

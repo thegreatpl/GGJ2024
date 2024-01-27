@@ -39,13 +39,28 @@ public class PacificationComponent : MonoBehaviour
     {
         if (type == PacifyObjectType)
         {
-            CurrentMood = Mood.Pacified;
-            SpriteLibrary.spriteLibraryAsset = Pacified; 
+            SetMood(Mood.Pacified); 
         }
         else
         {
-            CurrentMood = Mood.Enraged; 
-            SpriteLibrary.spriteLibraryAsset = Enraged; 
+            SetMood(Mood.Enraged); 
+        }
+    }
+
+    public void SetMood(Mood mood)
+    {
+        CurrentMood = mood; 
+        switch (mood)
+        {
+            case Mood.Normal:
+                SpriteLibrary.spriteLibraryAsset = Normal;
+                break;
+            case Mood.Enraged:
+                SpriteLibrary.spriteLibraryAsset = Enraged;
+                break;
+            case Mood.Pacified:
+                SpriteLibrary.spriteLibraryAsset = Pacified;             
+                break;
         }
     }
 
