@@ -17,7 +17,9 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public Camera Camera;
 
-    public WorldScript World; 
+    public WorldScript World;
+
+    public UIScript UIScript; 
 
     // Start is called before the first frame update
     void Start()
@@ -46,19 +48,28 @@ public class GameManager : MonoBehaviour
     //test the level. 
     IEnumerator test()
     {
-        yield return StartCoroutine(SpawnPlayer());
-       // World = FindObjectOfType<WorldScript>();
-        yield return StartCoroutine(LoadLevelCo(SceneManager.GetActiveScene().name));
+        yield return StartCoroutine(NewGame(SceneManager.GetActiveScene().name));
 
     }
     
-    IEnumerator NewGame()
+    public void StartNewGame(string firstLevel)
     {
+        StartCoroutine(NewGame(firstLevel));
+    }
+
+    IEnumerator NewGame(string firstLevel)
+    {
+        if (UIScript != null)
+        {
+            Destroy(UIScript.gameObject); 
+        }
+        var UI = Instantiate(PrefabManager.GetPrefab("UI")); 
+        DontDestroyOnLoad (UI);
+        UIScript = UI.GetComponent<UIScript>();
+
         yield return null; 
-
-        yield return StartCoroutine(SpawnPlayer());  
-        yield return null;
-
+        
+        yield return StartCoroutine(LoadLevelCo(firstLevel));  
     }
 
     IEnumerator SpawnPlayer()

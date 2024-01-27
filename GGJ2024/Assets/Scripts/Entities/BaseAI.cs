@@ -55,7 +55,7 @@ public class BaseAI : MonoBehaviour
     protected bool CanSee(GameObject other)
     {
         var hit = Physics2D.Raycast(transform.position,  other.transform.position - transform.position, Attributes.Sight);
-        if (hit.transform.gameObject == other)
+        if ( hit.transform?.gameObject == other)
         { return true; }
         return false;
     }

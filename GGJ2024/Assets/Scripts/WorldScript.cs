@@ -22,7 +22,7 @@ public class WorldScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_loaded && !Enemies.Any(x => x.CurrentMood != PacificationComponent.Mood.Pacified))
+        if (_loaded && !string.IsNullOrWhiteSpace(NextLevel) && !Enemies.Any(x => x.CurrentMood != PacificationComponent.Mood.Pacified))
         {
             GameManager.Instance.LoadLevel(NextLevel); 
         }

@@ -131,6 +131,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2844831312379701964, guid: 607371778edba0048ac62352d46beb7a, type: 3}
+      propertyPath: AttackSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -2844831312379701964, guid: 607371778edba0048ac62352d46beb7a, type: 3}
+      propertyPath: AttackDistance
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2309442964941641742, guid: 607371778edba0048ac62352d46beb7a, type: 3}
       propertyPath: m_Name
       value: BaseEnemy

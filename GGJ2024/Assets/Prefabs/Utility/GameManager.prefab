@@ -49,6 +49,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   Camera: {fileID: 0}
   World: {fileID: 0}
+  UIScript: {fileID: 0}
 --- !u!114 &1062009869607944879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,6 +86,9 @@ MonoBehaviour:
     Type: Utility
   - Name: GameManager
     Prefab: {fileID: 2394971880605497229}
+    Type: Utility
+  - Name: UI
+    Prefab: {fileID: 3439661770568200601, guid: b65d0a70b20b8e8408fc245dc20ef974, type: 3}
     Type: Utility
   - Name: World
     Prefab: {fileID: 4445003951275895430, guid: b21d7aa09635d6840a29083b7f9f900d, type: 3}

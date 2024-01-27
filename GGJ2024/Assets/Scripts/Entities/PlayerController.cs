@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 {
     public EntityController controller;
 
-    ObjectScript CarriedObject;
+    public ObjectScript CarriedObject;
 
     public float DropDistance = 2;
 
