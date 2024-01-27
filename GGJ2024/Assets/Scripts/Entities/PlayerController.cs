@@ -84,7 +84,8 @@ public class PlayerController : MonoBehaviour
     {
         if (CarriedObject == null)
             return;
-        controller.Animator.SetBool("IsAttacking", true); 
+        controller.Animator.SetTrigger("IsAttacking");
+        Attributes.AttackCooldown = Attributes.AttackSpeed; //give time for the animation to run. 
 
         var colliders = Physics2D.OverlapCircleAll(transform.position, Attributes.AttackDistance);
 
@@ -96,5 +97,7 @@ public class PlayerController : MonoBehaviour
                 pacifscript.ApplyObject(CarriedObject.type); 
             }
         }
+
+        
     }
 }

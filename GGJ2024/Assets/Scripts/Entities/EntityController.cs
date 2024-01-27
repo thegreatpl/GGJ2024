@@ -13,7 +13,7 @@ public class EntityController : MonoBehaviour
 
     SpriteRenderer _spriteRenderer;
 
-    public Animator Animator;
+    public Animator Animator ;
 
     public Direction MovementDirection
     {
@@ -42,7 +42,6 @@ public class EntityController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
 
         switch (MovementDirection)
         {
