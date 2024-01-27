@@ -17,7 +17,9 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public Camera Camera;
 
-    public WorldScript World; 
+    public WorldScript World;
+
+    public UIScript UIScript; 
 
     // Start is called before the first frame update
     void Start()

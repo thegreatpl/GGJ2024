@@ -6,10 +6,12 @@ public class ObjectScript : MonoBehaviour
 {
     public PacificationType type;
 
+    public Sprite Sprite;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Sprite = GetComponent<SpriteRenderer>().sprite;
     }
 
     // Update is called once per frame
