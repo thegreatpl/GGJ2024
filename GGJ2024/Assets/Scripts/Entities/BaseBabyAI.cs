@@ -42,6 +42,7 @@ public class BaseBabyAI : BaseAI
             {
                 GameManager.Instance.Player.GetComponent<Attributes>()?.DealDamage(Attributes.AttackDamage);
                 Attributes.AttackCooldown = Attributes.AttackSpeed;
+                PacificationComponent.SetMood(PacificationComponent.Mood.Normal); 
             }
             else if (CanSee(GameManager.Instance.Player))
                 MoveToPositionDumb(loc);
@@ -52,12 +53,12 @@ public class BaseBabyAI : BaseAI
 
     protected virtual void PacifiedBehaviour()
     {
-
+        controller.MovementDirection = Direction.None; //stop wandering off.
     }
 
     protected virtual void NormalBehaviour()
     {
-
+        controller.MovementDirection = Direction.None; //stop wandering off.
     }
 }
 
