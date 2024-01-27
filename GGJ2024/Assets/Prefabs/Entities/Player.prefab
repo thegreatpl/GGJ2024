@@ -135,7 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
-  DropDistance: 2
+  CarriedObject: {fileID: 0}
+  DropDistance: -1.5
   Attributes: {fileID: 0}
 --- !u!50 &1011902247033714314
 Rigidbody2D:
