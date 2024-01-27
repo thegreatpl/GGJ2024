@@ -83,8 +83,8 @@ public class PlayerController : MonoBehaviour
     public void UseObject()
     {
         if (CarriedObject == null)
-            return; 
-
+            return;
+        controller.Animator.SetBool("IsAttacking", true); 
 
         var colliders = Physics2D.OverlapCircleAll(transform.position, Attributes.AttackDistance);
 

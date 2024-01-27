@@ -5,6 +5,7 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.U2D.Animation;
 
 public class Assets : MonoBehaviour
 {
@@ -50,5 +51,48 @@ public class Assets : MonoBehaviour
 
 
         return prefabs;
+    }
+
+    [MenuItem("AssetImport/Create Animations")]
+    public static void CreateSpriteLibraries()
+    {
+        string direct = "Assets/Resources/Entities";
+        var files = Directory.GetFiles(direct)
+                .Where(x => new string[] { ".png", ".jpg" }.Contains(Path.GetExtension(x))).ToList();
+
+        foreach (var file in files)
+        {
+            CreateSpriteLibaryFiles(file);
+        }
+    }
+
+    static void CreateSpriteLibaryFiles(string file)
+    {
+        var sprites = AssetDatabase.LoadAllAssetsAtPath(file).Where(z => z is Sprite).Cast<Sprite>().ToList();
+
+        if (!(sprites.Count > 1))
+            return;
+
+        var name = Path.GetFileNameWithoutExtension(file);
+
+        var asset = ScriptableObject.CreateInstance<SpriteLibraryAsset>();
+
+        for (int idx = 0; idx < 3; idx++)
+        {
+            asset.AddCategoryLabel(sprites[idx], "idle", $"idle{idx}"); 
+        }
+        for (int idx = 3; idx < 6; idx++)
+        {
+            asset.AddCategoryLabel(sprites[idx], "walk", $"walk{idx}");
+        }
+        for (int idx = 6; idx < 9; idx++)
+        {
+            asset.AddCategoryLabel(sprites[idx], "useitem", $"useitem{idx}");
+        }
+
+        AssetDatabase.CreateAsset(asset, AssetDatabase.GenerateUniqueAssetPath("Assets/SpriteLibraries/" + $"{name}Library.asset"));
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        EditorUtility.SetDirty(asset);
     }
 }
