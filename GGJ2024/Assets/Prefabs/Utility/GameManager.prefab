@@ -68,6 +68,18 @@ MonoBehaviour:
   - Name: BaseEnemy
     Prefab: {fileID: 2309442964941641742, guid: 607371778edba0048ac62352d46beb7a, type: 3}
     Type: Enemies
+  - Name: ClownHornEnemy
+    Prefab: {fileID: 2309442964941641742, guid: b566a0d61d8c9d04b9e9fc4af3abd95b, type: 3}
+    Type: Enemies
+  - Name: TrumpetEnemy
+    Prefab: {fileID: 2309442964941641742, guid: 785fdabb5f7eeb2499fff88d9d053058, type: 3}
+    Type: Enemies
+  - Name: ClownHorn
+    Prefab: {fileID: 4745948368183373998, guid: 9f1991aa810671840a5b30fd4e029686, type: 3}
+    Type: Objects
+  - Name: Trumpet
+    Prefab: {fileID: 4745948368183373998, guid: 7319b2b6298537840a67f8f2e4f22791, type: 3}
+    Type: Objects
   - Name: Camera
     Prefab: {fileID: 3928416098577502581, guid: d3a9d5165070d20449cc9610b64bf1bf, type: 3}
     Type: Utility

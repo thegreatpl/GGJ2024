@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 561820902841916702}
   - component: {fileID: -7127471982865247019}
   m_Layer: 0
-  m_Name: BaseEnemy
+  m_Name: ClownHornEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 969a730a6d9dea044a165ab9e2a5fff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PacifyObjectType: 0
+  PacifyObjectType: 1
   Normal: {fileID: 7108339969198208228, guid: 7ae2c29b3d0ebca48a6e9e9a464a1896, type: 3}
   Enraged: {fileID: 7108339969198208228, guid: 4799b21340bef0f44bda30641ab26003, type: 3}
   Pacified: {fileID: 7108339969198208228, guid: 02399a0bba18c954d96fcb4c8fc31747, type: 3}
