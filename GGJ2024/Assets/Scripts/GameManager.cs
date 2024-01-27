@@ -52,13 +52,16 @@ public class GameManager : MonoBehaviour
 
     }
     
-    IEnumerator NewGame()
+    public void StartNewGame(string firstLevel)
+    {
+        StartCoroutine(NewGame(firstLevel));
+    }
+
+    IEnumerator NewGame(string firstLevel)
     {
         yield return null; 
 
-        yield return StartCoroutine(SpawnPlayer());  
-        yield return null;
-
+        yield return StartCoroutine(LoadLevelCo(firstLevel));  
     }
 
     IEnumerator SpawnPlayer()
