@@ -48,9 +48,7 @@ public class GameManager : MonoBehaviour
     //test the level. 
     IEnumerator test()
     {
-        yield return StartCoroutine(SpawnPlayer());
-       // World = FindObjectOfType<WorldScript>();
-        yield return StartCoroutine(LoadLevelCo(SceneManager.GetActiveScene().name));
+        yield return StartCoroutine(NewGame(SceneManager.GetActiveScene().name));
 
     }
     
@@ -61,8 +59,16 @@ public class GameManager : MonoBehaviour
 
     IEnumerator NewGame(string firstLevel)
     {
-        yield return null; 
+        if (UIScript != null)
+        {
+            Destroy(UIScript.gameObject); 
+        }
+        var UI = Instantiate(PrefabManager.GetPrefab("UI")); 
+        DontDestroyOnLoad (UI);
+        UIScript = UI.GetComponent<UIScript>();
 
+        yield return null; 
+        
         yield return StartCoroutine(LoadLevelCo(firstLevel));  
     }
 
