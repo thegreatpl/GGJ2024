@@ -4,15 +4,19 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(PacificationComponent))]
+[RequireComponent(typeof(SoundEffectController))]
 public class BaseBabyAI : BaseAI
 {
     public PacificationComponent PacificationComponent;
+
+    public SoundEffectController SoundEffectController;
     // Start is called before the first frame update
     void Start()
     {
         PacificationComponent = GetComponent<PacificationComponent>();
         controller = GetComponent<EntityController>();
         Attributes = GetComponent<Attributes>();
+        SoundEffectController = GetComponent<SoundEffectController>();
     }
 
     // Update is called once per frame
@@ -52,12 +56,12 @@ public class BaseBabyAI : BaseAI
 
     protected virtual void PacifiedBehaviour()
     {
-
+        //add in idle sounds. 
     }
 
     protected virtual void NormalBehaviour()
     {
-
+        //add in idle sounds. 
     }
 }
 
