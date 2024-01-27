@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.U2D.Animation;
 
 [RequireComponent(typeof(SpriteLibrary))]
+[RequireComponent(typeof(SoundEffectController))]
 public class PacificationComponent : MonoBehaviour
 {
     public PacificationType PacifyObjectType;
@@ -18,6 +19,7 @@ public class PacificationComponent : MonoBehaviour
 
     public Mood CurrentMood; 
 
+    public SoundEffectController SoundEffectController;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,7 @@ public class PacificationComponent : MonoBehaviour
         SpriteLibrary = GetComponent<SpriteLibrary>();
         CurrentMood = Mood.Normal; 
         SpriteLibrary.spriteLibraryAsset = Normal;
-
+        SoundEffectController = GetComponent<SoundEffectController>();
        // GameManager.Instance.World.RegisterEnemy(this); 
     }
 
@@ -57,9 +59,11 @@ public class PacificationComponent : MonoBehaviour
                 break;
             case Mood.Enraged:
                 SpriteLibrary.spriteLibraryAsset = Enraged;
+                SoundEffectController.PlaySound("cry"); 
                 break;
             case Mood.Pacified:
-                SpriteLibrary.spriteLibraryAsset = Pacified;             
+                SpriteLibrary.spriteLibraryAsset = Pacified;
+                SoundEffectController.PlaySound("laugh");
                 break;
         }
     }

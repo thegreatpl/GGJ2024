@@ -95,7 +95,6 @@ public class PlayerController : MonoBehaviour
             return;
         controller.Animator.SetTrigger("IsAttacking");
         Attributes.AttackCooldown = Attributes.AttackSpeed; //give time for the animation to run. 
-            return;
 
         SoundEffectController.PlaySound(CarriedObject.SoundEffectName); 
 
