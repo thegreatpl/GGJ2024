@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(PacificationComponent))]
 public class BaseBabyAI : BaseAI
@@ -40,10 +41,12 @@ public class BaseBabyAI : BaseAI
             if (dist < Attributes.AttackDistance && Attributes.AttackCooldown == 0)
             {
                 GameManager.Instance.Player.GetComponent<Attributes>()?.DealDamage(Attributes.AttackDamage);
-                Attributes.AttackCooldown = Attributes.AttackSpeed; 
+                Attributes.AttackCooldown = Attributes.AttackSpeed;
             }
-            else if (dist < Attributes.Sight)
+            else if (CanSee(GameManager.Instance.Player))
                 MoveToPositionDumb(loc);
+            else
+                controller.MovementDirection = Direction.None; //stop wandering off. 
         }
     }
 
