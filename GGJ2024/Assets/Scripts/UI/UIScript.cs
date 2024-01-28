@@ -74,4 +74,17 @@ public class UIScript : MonoBehaviour
         Heart2.color = Color.white;
         Heart3.color= Color.white;
     }
+
+    public void DeathScreen()
+    {
+        StartCoroutine(OnDeath()); 
+    }
+
+    IEnumerator OnDeath()
+    {
+        yield return null;
+        //insert game over screen. 
+
+        GameManager.Instance.GameOver(); 
+    }
 }

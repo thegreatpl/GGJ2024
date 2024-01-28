@@ -30,6 +30,12 @@ public class PlayerController : MonoBehaviour
         {
             SoundEffectController.PlaySound("takeDamage");
             controller.Animator.SetTrigger("damaged"); 
+        };
+
+        Attributes.OnDeath += () =>
+        {
+            GameManager.Instance.UIScript.DeathScreen();
+            Destroy(gameObject); 
         }; 
     }
 

@@ -118,4 +118,9 @@ public class GameManager : MonoBehaviour
         
         yield return StartCoroutine(World.LoadWorld());
     }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+    }
 }
