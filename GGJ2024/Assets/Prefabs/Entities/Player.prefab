@@ -385,3 +385,6 @@ MonoBehaviour:
   - name: horn
     type: useItem
     clip: {fileID: 8300000, guid: cb5d15b6a286c6241af16805dc0fdace, type: 3}
+  - name: horn2
+    type: useItem
+    clip: {fileID: 8300000, guid: 65b619e77cff8ac469c3a7b981722fa1, type: 3}
