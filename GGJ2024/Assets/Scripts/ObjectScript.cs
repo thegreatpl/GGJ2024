@@ -8,7 +8,9 @@ public class ObjectScript : MonoBehaviour
 
     public Sprite Sprite;
 
-    public string SoundEffectName; 
+    public string SoundEffectName;
+
+    public string attackanimation; 
 
     // Start is called before the first frame update
     void Start()

@@ -49,5 +49,29 @@ MonoBehaviour:
     - m_Name: useitem8
       m_Hash: 35230346
       m_Sprite: {fileID: -860787201, guid: 0ff037d4cfa8d284b9a5ff3cd9818b7c, type: 3}
+  - m_Name: damage
+    m_Hash: 298341484
+    m_CategoryList:
+    - m_Name: damage9
+      m_Hash: 152208034
+      m_Sprite: {fileID: -225534924, guid: 0ff037d4cfa8d284b9a5ff3cd9818b7c, type: 3}
+    - m_Name: damage10
+      m_Hash: 68388207
+      m_Sprite: {fileID: -875200312, guid: 0ff037d4cfa8d284b9a5ff3cd9818b7c, type: 3}
+  - m_Name: useitem2
+    m_Hash: 583826324
+    m_CategoryList:
+    - m_Name: useitem211
+      m_Hash: 77647889
+      m_Sprite: {fileID: -1714352043, guid: 0ff037d4cfa8d284b9a5ff3cd9818b7c, type: 3}
+    - m_Name: useitem212
+      m_Hash: 497648043
+      m_Sprite: {fileID: 314690034, guid: 0ff037d4cfa8d284b9a5ff3cd9818b7c, type: 3}
+    - m_Name: useitem213
+      m_Hash: 716091709
+      m_Sprite: {fileID: 1783874727, guid: 0ff037d4cfa8d284b9a5ff3cd9818b7c, type: 3}
+    - m_Name: useitem214
+      m_Hash: 885662878
+      m_Sprite: {fileID: -95975398, guid: 0ff037d4cfa8d284b9a5ff3cd9818b7c, type: 3}
   m_ModificationHash: 0
   m_Version: 1
