@@ -102,6 +102,7 @@ MonoBehaviour:
   type: 1
   Sprite: {fileID: 0}
   SoundEffectName: horn
+  attackanimation: attacking1
 --- !u!50 &4839511169296163362
 Rigidbody2D:
   serializedVersion: 4

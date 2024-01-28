@@ -102,6 +102,7 @@ MonoBehaviour:
   type: 0
   Sprite: {fileID: 0}
   SoundEffectName: 
+  attackanimation: attacking2
 --- !u!50 &4839511169296163362
 Rigidbody2D:
   serializedVersion: 4
