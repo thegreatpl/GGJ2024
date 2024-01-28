@@ -89,6 +89,15 @@ public class Assets : MonoBehaviour
         {
             asset.AddCategoryLabel(sprites[idx], "useitem", $"useitem{idx}");
         }
+        for (int idx = 9; idx < 11; idx++)
+        {
+            asset.AddCategoryLabel(sprites[idx], "damage", $"damage{idx}");
+            
+        }
+        for (int idx = 11; idx < 15; idx++)
+        {
+            asset.AddCategoryLabel(sprites[idx], "useitem2", $"useitem2{idx}");
+        }
 
         AssetDatabase.CreateAsset(asset, AssetDatabase.GenerateUniqueAssetPath("Assets/SpriteLibraries/" + $"{name}Library.asset"));
         AssetDatabase.SaveAssets();

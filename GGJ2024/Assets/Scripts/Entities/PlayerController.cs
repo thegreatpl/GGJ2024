@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
         Attributes.OnDamage += () =>
         {
             SoundEffectController.PlaySound("takeDamage");
+            controller.Animator.SetTrigger("damaged"); 
         }; 
     }
 
@@ -93,7 +94,7 @@ public class PlayerController : MonoBehaviour
     {
         if (CarriedObject == null)
             return;
-        controller.Animator.SetTrigger("IsAttacking");
+        controller.Animator.SetTrigger(CarriedObject.attackanimation);
         Attributes.AttackCooldown = Attributes.AttackSpeed; //give time for the animation to run. 
 
         SoundEffectController.PlaySound(CarriedObject.SoundEffectName); 
