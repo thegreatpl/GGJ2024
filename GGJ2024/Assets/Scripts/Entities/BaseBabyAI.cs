@@ -45,7 +45,8 @@ public class BaseBabyAI : BaseAI
             {
                 GameManager.Instance.Player.GetComponent<Attributes>()?.DealDamage(Attributes.AttackDamage);
                 Attributes.AttackCooldown = Attributes.AttackSpeed;
-                PacificationComponent.SetMood(PacificationComponent.Mood.Normal); 
+                PacificationComponent.SetMood(PacificationComponent.Mood.Normal);
+                controller.Animator.SetTrigger("attacking2"); 
             }
             else if (CanSee(GameManager.Instance.Player))
                 MoveToPositionDumb(loc);
