@@ -2236,7 +2236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSpawn: {x: 0, y: 0, z: 0}
-  NextLevel: 
+  NextLevel: LVL_08
   Enemies: []
 --- !u!1839735485 &1986203355170886489
 Tilemap:
