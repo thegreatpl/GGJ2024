@@ -234,7 +234,7 @@ MonoBehaviour:
   MovementSpeed: 2.5
   MaxHealth: 1
   AttackDamage: 1
-  AttackDistance: 1
+  AttackDistance: 1.5
   AttackSpeed: 10
   Sight: 10
   CurrentHealth: 0

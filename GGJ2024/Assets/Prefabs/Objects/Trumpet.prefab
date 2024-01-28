@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   Sprite: {fileID: 0}
-  SoundEffectName: 
+  SoundEffectName: horn
   attackanimation: attacking2
 --- !u!50 &4839511169296163362
 Rigidbody2D:
