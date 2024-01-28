@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: SpriteSheet_Ennemy_EnragedLibrary
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: idle
+    m_Hash: 472167701
+    m_CategoryList:
+    - m_Name: idle0
+      m_Hash: 433725311
+      m_Sprite: {fileID: -795277792, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: idle1
+      m_Hash: 786247657
+      m_Sprite: {fileID: 2111003916, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: idle2
+      m_Hash: 936672851
+      m_Sprite: {fileID: 1068411584, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+  - m_Name: walk
+    m_Hash: 227637845
+    m_CategoryList:
+    - m_Name: walk3
+      m_Hash: 912177818
+      m_Sprite: {fileID: -1926807161, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: walk4
+      m_Hash: 674901817
+      m_Sprite: {fileID: 1180421373, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: walk5
+      m_Hash: 524099503
+      m_Sprite: {fileID: 845380287, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+  - m_Name: useitem
+    m_Hash: 17259938
+    m_CategoryList:
+    - m_Name: useitem6
+      m_Hash: 631357325
+      m_Sprite: {fileID: 567829715, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: useitem7
+      m_Hash: 312905499
+      m_Sprite: {fileID: 707588157, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: useitem8
+      m_Hash: 35230346
+      m_Sprite: {fileID: -807112093, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+  - m_Name: damage
+    m_Hash: 298341484
+    m_CategoryList:
+    - m_Name: damage9
+      m_Hash: 152208034
+      m_Sprite: {fileID: 29749594, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: damage10
+      m_Hash: 68388207
+      m_Sprite: {fileID: 400394591, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+  - m_Name: useitem2
+    m_Hash: 583826324
+    m_CategoryList:
+    - m_Name: useitem211
+      m_Hash: 77647889
+      m_Sprite: {fileID: 709625764, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: useitem212
+      m_Hash: 497648043
+      m_Sprite: {fileID: -168879424, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: useitem213
+      m_Hash: 716091709
+      m_Sprite: {fileID: 135819793, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+    - m_Name: useitem214
+      m_Hash: 885662878
+      m_Sprite: {fileID: -681839168, guid: ce5bc376a0e4fb746a5b3ddefa8eab09, type: 3}
+  m_ModificationHash: 0
+  m_Version: 1
