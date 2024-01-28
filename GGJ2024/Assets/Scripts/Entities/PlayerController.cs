@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
 
     public SoundEffectController SoundEffectController;
 
+    public GameObject PingPrefab; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -116,6 +118,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        
+        var pingobj = Instantiate(PingPrefab, transform.position, transform.rotation);
+        pingobj.GetComponent<Ping>().Range = Attributes.AttackDistance; 
     }
 }

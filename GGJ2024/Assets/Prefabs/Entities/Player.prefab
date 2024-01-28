@@ -145,6 +145,7 @@ MonoBehaviour:
   DropDistance: 2
   Attributes: {fileID: 0}
   SoundEffectController: {fileID: 0}
+  PingPrefab: {fileID: 3928800277684838834, guid: 4544f6fddc7c8664a8ba980c91a55209, type: 3}
 --- !u!50 &1011902247033714314
 Rigidbody2D:
   serializedVersion: 4
