@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 73084bfe8046dcc4c98dcaf88a4b4287
-=======
-guid: eb9b42d01074eea4e9a41da9281fc958
->>>>>>> Stashed changes
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,33 +34,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< Updated upstream
-    filterMode: 1
-=======
     filterMode: 0
->>>>>>> Stashed changes
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-<<<<<<< Updated upstream
-  spriteMode: 1
-=======
   spriteMode: 2
->>>>>>> Stashed changes
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream
-  spritePixelsToUnits: 100
-=======
   spritePixelsToUnits: 64
->>>>>>> Stashed changes
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -79,20 +63,29 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-<<<<<<< Updated upstream
     textureFormat: -1
-=======
-    textureFormat: 4
->>>>>>> Stashed changes
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,7 +98,46 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,7 +150,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,9 +160,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< Updated upstream
-    sprites: []
-=======
     sprites:
     - serializedVersion: 2
       name: SpriteSheet_Ennemy_Enraged2_0
@@ -147,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f8adacc021e06f45a897376a43e518a
-      internalID: -1392881203
+      spriteID: 6aa7e848196460f42b38c690ad3518c6
+      internalID: 1858293143
       vertices: []
       indices: 
       edges: []
@@ -168,8 +197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20f1f0cf1e4e38247972934961017c3b
-      internalID: -1820140386
+      spriteID: 450e09c6b046f0c4ab48ba697e9163cc
+      internalID: 801746306
       vertices: []
       indices: 
       edges: []
@@ -189,29 +218,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33674754cced77544b5d7228c4adca36
-      internalID: -1012396061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpriteSheet_Ennemy_Enraged2_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e5d084d3d050694bb6a5bfa092dab97
-      internalID: 737268969
+      spriteID: 827404336aaada14b8f851e82cad79db
+      internalID: -599742981
       vertices: []
       indices: 
       edges: []
@@ -220,6 +228,27 @@ TextureImporter:
       name: SpriteSheet_Ennemy_Enraged2_4
       rect:
         serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413b17e57f320d148a154a2640fe0efd
+      internalID: 417158135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Ennemy_Enraged2_5
+      rect:
+        serializedVersion: 2
         x: 128
         y: 512
         width: 128
@@ -231,14 +260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a693cbd6d564fb74b97661fbd9f158e9
-      internalID: -2087159147
+      spriteID: 803e72a6be04c6c49bbc23850de17b72
+      internalID: -177261354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_Ennemy_Enraged2_5
+      name: SpriteSheet_Ennemy_Enraged2_6
       rect:
         serializedVersion: 2
         x: 256
@@ -252,14 +281,77 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 780cd99847c615e41a2e751f138dadff
-      internalID: 393450859
+      spriteID: 554ad733f2c2b4d49af8066de725b647
+      internalID: -1120679939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_Ennemy_Enraged2_6
+      name: SpriteSheet_Ennemy_Enraged2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17719b02bda2c44c862a42e5ed5ffd8
+      internalID: 353261037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Ennemy_Enraged2_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8ed081507cccf4f90dd5330eca4c9c
+      internalID: -1485987997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Ennemy_Enraged2_10
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef14571ac5570fc47b76fa9c0b005fb5
+      internalID: 269431089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Ennemy_Enraged2_12
       rect:
         serializedVersion: 2
         x: 0
@@ -273,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a162299c39904774fab3aec0ef666992
-      internalID: -540313212
+      spriteID: 99d19c76fca12ec48977c80012dd00b3
+      internalID: 911926003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_Ennemy_Enraged2_7
+      name: SpriteSheet_Ennemy_Enraged2_13
       rect:
         serializedVersion: 2
         x: 128
@@ -294,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9750d638710c4a74a835492e6ab5e8d5
-      internalID: -1983330778
+      spriteID: 8c193bde36e58e942831449617d6f160
+      internalID: -32514408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_Ennemy_Enraged2_8
+      name: SpriteSheet_Ennemy_Enraged2_14
       rect:
         serializedVersion: 2
         x: 256
@@ -315,14 +407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 900018cd9dbd1304a889ada8abdc52f6
-      internalID: 1570652548
+      spriteID: c9ed7115c78afc844ba27a57b0241336
+      internalID: 1573362591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpriteSheet_Ennemy_Enraged2_9
+      name: SpriteSheet_Ennemy_Enraged2_15
       rect:
         serializedVersion: 2
         x: 384
@@ -336,13 +428,54 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 410223b01441d5e4c90e7bca29d5f397
-      internalID: 2122414315
+      spriteID: b1cd7c4b8f277024da84f214ebbff07f
+      internalID: 1121666400
       vertices: []
       indices: 
       edges: []
       weights: []
->>>>>>> Stashed changes
+    - serializedVersion: 2
+      name: SpriteSheet_Ennemy_Enraged2_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1437445f95ccc4bbb3d1c8bed33ece
+      internalID: -804864487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Ennemy_Enraged2_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62ef6a6f273736439962935fadf7f45
+      internalID: 1127710545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -353,21 +486,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-<<<<<<< Updated upstream
-    nameFileIdTable: {}
-=======
     nameFileIdTable:
-      SpriteSheet_Ennemy_Enraged2_0: -1392881203
-      SpriteSheet_Ennemy_Enraged2_1: -1820140386
-      SpriteSheet_Ennemy_Enraged2_2: -1012396061
-      SpriteSheet_Ennemy_Enraged2_3: 737268969
-      SpriteSheet_Ennemy_Enraged2_4: -2087159147
-      SpriteSheet_Ennemy_Enraged2_5: 393450859
-      SpriteSheet_Ennemy_Enraged2_6: -540313212
-      SpriteSheet_Ennemy_Enraged2_7: -1983330778
-      SpriteSheet_Ennemy_Enraged2_8: 1570652548
-      SpriteSheet_Ennemy_Enraged2_9: 2122414315
->>>>>>> Stashed changes
+      SpriteSheet_Ennemy_Enraged2_0: 1858293143
+      SpriteSheet_Ennemy_Enraged2_1: 801746306
+      SpriteSheet_Ennemy_Enraged2_10: 269431089
+      SpriteSheet_Ennemy_Enraged2_11: -2120566624
+      SpriteSheet_Ennemy_Enraged2_12: 911926003
+      SpriteSheet_Ennemy_Enraged2_13: -32514408
+      SpriteSheet_Ennemy_Enraged2_14: 1573362591
+      SpriteSheet_Ennemy_Enraged2_15: 1121666400
+      SpriteSheet_Ennemy_Enraged2_16: -804864487
+      SpriteSheet_Ennemy_Enraged2_17: 1127710545
+      SpriteSheet_Ennemy_Enraged2_18: 2005561513
+      SpriteSheet_Ennemy_Enraged2_19: -1866227800
+      SpriteSheet_Ennemy_Enraged2_2: -599742981
+      SpriteSheet_Ennemy_Enraged2_20: 1683778348
+      SpriteSheet_Ennemy_Enraged2_21: 1972998428
+      SpriteSheet_Ennemy_Enraged2_22: -1967914732
+      SpriteSheet_Ennemy_Enraged2_23: -1159087399
+      SpriteSheet_Ennemy_Enraged2_3: 1829691443
+      SpriteSheet_Ennemy_Enraged2_4: 417158135
+      SpriteSheet_Ennemy_Enraged2_5: -177261354
+      SpriteSheet_Ennemy_Enraged2_6: -1120679939
+      SpriteSheet_Ennemy_Enraged2_7: -1778968568
+      SpriteSheet_Ennemy_Enraged2_8: 353261037
+      SpriteSheet_Ennemy_Enraged2_9: -1485987997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

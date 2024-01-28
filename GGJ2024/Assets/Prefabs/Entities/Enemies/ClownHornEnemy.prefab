@@ -84,11 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-<<<<<<< Updated upstream
-  m_Sprite: {fileID: -2089627501, guid: 9639a59f428808f46a595e69bcf12551, type: 3}
-=======
-  m_Sprite: {fileID: -1511684439, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
->>>>>>> Stashed changes
+  m_Sprite: {fileID: -256138837, guid: 2314034548dd7ab41a9c12e1d8998489, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -112,36 +108,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Library:
-  - m_Name: idle
-    m_Hash: 0
-    m_CategoryList:
-    - m_Name: idle0
-      m_Hash: 0
-      m_Sprite: {fileID: -1511684439, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
-    - m_Name: idle1
-      m_Hash: 0
-      m_Sprite: {fileID: -549837305, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
-    - m_Name: idle2
-      m_Hash: 0
-      m_Sprite: {fileID: 916032261, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
-  - m_Name: damage
-    m_Hash: 0
-    m_CategoryList:
-    - m_Name: damage9
-      m_Hash: 0
-      m_Sprite: {fileID: -540313212, guid: eb9b42d01074eea4e9a41da9281fc958, type: 3}
-    - m_Name: damage10
-      m_Hash: 0
-      m_Sprite: {fileID: -1983330778, guid: eb9b42d01074eea4e9a41da9281fc958, type: 3}
-  - m_Name: useitem2
-    m_Hash: 0
-    m_CategoryList:
-    - m_Name: useitem211
-      m_Hash: 0
-      m_Sprite: {fileID: 1265264370, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
-    - m_Name: useitem212
-      m_Hash: 0
-      m_Sprite: {fileID: 1690475342, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
   - m_Name: New Category
     m_Hash: 0
     m_CategoryList: []
@@ -159,9 +125,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PacifyObjectType: 1
-  Normal: {fileID: 11400000, guid: 91535f1355f78e34f9f1320874052f10, type: 2}
-  Enraged: {fileID: 11400000, guid: 820d1de499339534184509a9259c861f, type: 2}
-  Pacified: {fileID: 11400000, guid: 68b7cc64ff2a19c4299077549ac94233, type: 2}
+  Normal: {fileID: 11400000, guid: f9b7add699745444a8bff2d6fcbc27ce, type: 2}
+  Enraged: {fileID: 11400000, guid: 5950bd12c5f9d514f82acbbf4f7247b9, type: 2}
+  Pacified: {fileID: 11400000, guid: dd4eada2552173345a210d8840b18c2c, type: 2}
   SpriteLibrary: {fileID: 0}
   CurrentMood: 0
   SoundEffectController: {fileID: 0}
