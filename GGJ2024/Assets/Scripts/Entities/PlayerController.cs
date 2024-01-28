@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using TreeEditor;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(EntityController))]
