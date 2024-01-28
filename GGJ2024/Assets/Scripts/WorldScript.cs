@@ -24,7 +24,12 @@ public class WorldScript : MonoBehaviour
     {
         if (_loaded && !string.IsNullOrWhiteSpace(NextLevel) && !Enemies.Any(x => x.CurrentMood != PacificationComponent.Mood.Pacified))
         {
-            GameManager.Instance.LoadLevel(NextLevel); 
+            if (NextLevel == "win")
+            {
+                GameManager.Instance.UIScript.WinScreen(); 
+            }
+            else
+                GameManager.Instance.LoadLevel(NextLevel); 
         }
     }
 

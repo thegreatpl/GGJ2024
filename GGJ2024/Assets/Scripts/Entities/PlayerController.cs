@@ -119,6 +119,6 @@ public class PlayerController : MonoBehaviour
         }
 
         var pingobj = Instantiate(PingPrefab, transform.position, transform.rotation);
-        pingobj.GetComponent<Ping>().Range = Attributes.AttackDistance; 
+        pingobj.GetComponent<Ping>().Range = Attributes.AttackDistance * 2; 
     }
 }

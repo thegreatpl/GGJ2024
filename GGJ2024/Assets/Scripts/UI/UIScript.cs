@@ -17,6 +17,9 @@ public class UIScript : MonoBehaviour
    
     PlayerController playerController;
 
+
+    public GameObject VictoryPanel; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -86,5 +89,21 @@ public class UIScript : MonoBehaviour
         //insert game over screen. 
 
         GameManager.Instance.GameOver(); 
+    }
+
+
+    public void WinScreen()
+    {
+        StartCoroutine(OnWin()); 
+    }
+
+    IEnumerator OnWin()
+    {
+        var panel = VictoryPanel.GetComponent<Image>(); 
+        panel.color = Color.black;
+        yield return new WaitForSeconds(10);
+        panel.color = Color.clear; 
+        GameManager.Instance.GameOver(); 
+
     }
 }
