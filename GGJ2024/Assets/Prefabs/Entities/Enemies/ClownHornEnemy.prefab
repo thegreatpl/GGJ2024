@@ -235,10 +235,10 @@ MonoBehaviour:
   MaxHealth: 1
   AttackDamage: 1
   AttackDistance: 1.5
-  AttackSpeed: 10
+  AttackSpeed: 100
   Sight: 10
   CurrentHealth: 0
-  AttackCooldown: 0
+  AttackCooldown: 10
 --- !u!114 &561820902841916702
 MonoBehaviour:
   m_ObjectHideFlags: 0

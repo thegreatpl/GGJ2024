@@ -62,8 +62,20 @@ public class BaseBabyAI : BaseAI
 
     protected virtual void NormalBehaviour()
     {
+        if (GameManager.Instance.Player != null)
+        {
+            //deal damage in base state. 
+            var loc = GameManager.Instance.Player.transform.position;
+            var dist = Vector3.Distance(loc, transform.position);
+            if (dist < Attributes.AttackDistance && Attributes.AttackCooldown == 0)
+            {
+                GameManager.Instance.Player.GetComponent<Attributes>()?.DealDamage(Attributes.AttackDamage);
+                Attributes.AttackCooldown = Attributes.AttackSpeed;
+            }
+        }
         //add in idle sounds. 
         controller.MovementDirection = Direction.None; //stop wandering off.
+
     }
 }
 
