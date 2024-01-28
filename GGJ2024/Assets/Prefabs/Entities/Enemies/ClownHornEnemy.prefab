@@ -84,7 +84,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
+<<<<<<< Updated upstream
   m_Sprite: {fileID: -2089627501, guid: 9639a59f428808f46a595e69bcf12551, type: 3}
+=======
+  m_Sprite: {fileID: -1511684439, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
+>>>>>>> Stashed changes
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,6 +112,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Library:
+  - m_Name: idle
+    m_Hash: 0
+    m_CategoryList:
+    - m_Name: idle0
+      m_Hash: 0
+      m_Sprite: {fileID: -1511684439, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
+    - m_Name: idle1
+      m_Hash: 0
+      m_Sprite: {fileID: -549837305, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
+    - m_Name: idle2
+      m_Hash: 0
+      m_Sprite: {fileID: 916032261, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
+  - m_Name: damage
+    m_Hash: 0
+    m_CategoryList:
+    - m_Name: damage9
+      m_Hash: 0
+      m_Sprite: {fileID: -540313212, guid: eb9b42d01074eea4e9a41da9281fc958, type: 3}
+    - m_Name: damage10
+      m_Hash: 0
+      m_Sprite: {fileID: -1983330778, guid: eb9b42d01074eea4e9a41da9281fc958, type: 3}
+  - m_Name: useitem2
+    m_Hash: 0
+    m_CategoryList:
+    - m_Name: useitem211
+      m_Hash: 0
+      m_Sprite: {fileID: 1265264370, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
+    - m_Name: useitem212
+      m_Hash: 0
+      m_Sprite: {fileID: 1690475342, guid: d9e9f8fed01c29f4f9cdc7ee7d8eb410, type: 3}
   - m_Name: New Category
     m_Hash: 0
     m_CategoryList: []
